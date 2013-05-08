@@ -854,8 +854,7 @@ test('magic.alert 英文环境', function(){
     ua.importsrc("baidu.i18n.cultures.en-US", function(){
     	var instance = magic.alert({
             'content': '内容',
-            'titleText': '标题',
-            'ok': function(){}
+            'titleText': '标题'
         });
 
         ok($.trim($(instance.buttons[0]).text()) == 'ok', '按钮文案显示正确');
